@@ -18,25 +18,26 @@ public class ItemEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long I_no;
+    @Column(name = "item_no")
+    private Long iNo;
 
-    @Column(nullable = false)
-    private String I_name;
+    @Column(name = "item_name", nullable = false)
+    private String iName;
 
-    @Column(nullable = false)
-    private String I_desc;
+    @Column(name = "item_desc", nullable = false)
+    private String iDesc;
 
-    @Column(nullable = false)
-    private Long start_price;
+    @Column(name = "start_price", nullable = false)
+    private Long startPrice;
 
-    @Column(nullable = false, name = "max_price")
+    @Column(name = "max_price", nullable = false)
     private Long maxPrice;
 
     @Column(nullable = false)
-    private Date regdate;
+    private Date regDate;
 
     @Column(nullable = false)
-    private Date moddate;
+    private Date modDate;
 
     @Enumerated(EnumType.STRING)
     private ItemStatus itemStatus;
