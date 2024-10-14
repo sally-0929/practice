@@ -16,11 +16,11 @@ public class UserGradeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ugid")
+    @Column(name = "ug_id")
     private Long ugId;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "ugname", nullable = false)
+    @Column(name = "ug_name", nullable = false)
     private UserGradeName ugName;
 
     @Column(name = "ug_desc", length = 100)
