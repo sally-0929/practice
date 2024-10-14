@@ -7,16 +7,16 @@
 <body>
 <h1>Item Categories</h1>
 <table>
-  <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-  <tr th:each="category : ${categories}">
-    <td th:text="${category.cid}"></td>
-    <td th:text="${category.cname}"></td>
-    <td th:text="${category.cDesc}"></td>
-  </tr>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    <tr th:each="category : ${categories}">
+        <td th:text="${category.cid}"></td>
+        <td th:text="${category.cname}"></td>
+        <td th:text="${category.cDesc}"></td>
+    </tr>
 </table>
 </body>
 </html>
