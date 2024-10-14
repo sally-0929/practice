@@ -12,7 +12,7 @@ public class ItemCategory {
     private Long cid;
 
     @Column(name = "cname", nullable = false, length = 100)
-    private String cname;
+    private String cName;
 
     @Column(name = "c_desc", nullable = false, length = 100)
     private String cDesc;

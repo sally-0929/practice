@@ -1,4 +1,4 @@
-package com.tandd.study;
+package com.tandd.study.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

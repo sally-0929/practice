@@ -29,8 +29,8 @@ public class ItemEntity {
     @Column(nullable = false)
     private Long start_price;
 
-    @Column(nullable = false)
-    private Long max_price;
+    @Column(nullable = false, name = "max_price")
+    private Long maxPrice;
 
     @Column(nullable = false)
     private Date regdate;
