@@ -22,6 +22,6 @@ public class ItemController {
 
     @PostMapping("/register")
     public String register(ItemDTO itemDTO, RedirectAttributes redirectAttributes){
-
+            return "바보";
     }
 }

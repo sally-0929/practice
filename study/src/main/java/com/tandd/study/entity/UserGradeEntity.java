@@ -1,6 +1,7 @@
-package com.tandd.study;
+package com.tandd.study.entity;
 
 
+import com.tandd.study.status.UserGradeName;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;

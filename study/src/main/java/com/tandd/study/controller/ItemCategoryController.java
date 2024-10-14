@@ -30,7 +30,7 @@ public class ItemCategoryController {
     @PostMapping("/register")
     public String registerCategory(@ModelAttribute ItemCategoryDTO itemCategoryDTO) {
         ItemCategory itemCategory = new ItemCategory();
-        itemCategory.setCname(itemCategoryDTO.getCname());
+        itemCategory.setCName(itemCategoryDTO.getCname());
         itemCategory.setCDesc(itemCategoryDTO.getC_desc());
 
         itemCategoryRepository.save(itemCategory);

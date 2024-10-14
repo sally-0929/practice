@@ -8,7 +8,7 @@
 <h1>Register New Category</h1>
 <form th:action="@{/register}" th:object="${itemCategoryDTO}" method="post">
   <label for="cname">Category Name</label>
-  <input type="text" id="cname" th:field="*{cname}" required/>
+  <input type="text" id="cname" th:field="*{cName}" required/>
 
   <label for="cDesc">Category Description</label>
   <input type="text" id="cDesc" th:field="*{cDesc}" required/>
